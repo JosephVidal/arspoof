@@ -35,7 +35,7 @@ def arspoof(ip_1, ip_2, regex_mac):
     os.write(1, "[\033[32m+\033[00m] ")
     srp(trame)
 
-def clean():
+def clean(ip_1, ip_2):
     trame = ARP(op = 2, pdst = ip_2, hwdst = get_mac(ip_1))
     print("[\033[32m+\033[00m] Cleaning target's cache")
     send(trame, count = 5)
