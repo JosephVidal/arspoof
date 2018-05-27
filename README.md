@@ -9,11 +9,11 @@ USAGE:
 ```
 Install:
 ```
-make install
+$ make install
 ```
 Uninstall:
 ```
-make uninstall
+$ make uninstall
 ```
 # Nota
 The script must be run twice, one for target and one other for the router.
